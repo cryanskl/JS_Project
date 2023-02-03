@@ -8,16 +8,13 @@
 </head>
 <body>
   <script>
-    var foo = 1;
-    function bar() {
-        console.log(foo);  
-        if (!foo) {
-            var foo = 10;
-        }
-        console.log(foo); 
+    let obj = {a:12}
+    function foo(obj) {;;
+      obj = {a:13}
+      console.log(obj)
     }
-
-bar();
+    foo(obj)
+    console.log(obj)
   </script>
 </body>
 </html>
